@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Samir Alieev - Challenge 1</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
+  </head>
+  <body onload="addProcent()">
+    <section id="container">
+      <header>
+        <strong>ITS</strong> - Welkom op de dashboard van de ruimteschip ITS. Hierin kunt u alle benodigde informatie vinden wat betreft de ruimteschip en het reis naar Mars.
+        Een fijne reis toegewenst!
+
+        <div id="afstandLabel"><cite>Afstand tot Mars vanaf deze locatie.</cite></div>
+        <div id="afstandTotaal">
+
+          <div id="huidigeAfstand">
+            <span id="text"></span>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div id="voertuig">
+          <section id="informatie">
+            Voedsel voorraad
+            <canvas id="voedselVoorraad"></canvas>
+            Drank voorraad
+            <canvas id="drankVoorraad"></canvas>
+          </section>
+          <section id="omgeving">
+            Spaceship snelheid
+            <div id="snelheid">
+              Snelheid x100Lj
+              <div class="meting"></div>
+              <div class="meting"></div>
+              <div class="meting"></div>
+              <div class="meting"></div>
+              <div class="meting"></div>
+              <div class="meting"></div>
+              <div class="meting"></div>
+              <div class="meting"></div>
+            </div>
+            <div id="acceleratie">
+              Accelartie x1000&sup2;
+              <div class="meting"></div>
+              <div class="meting"></div>
+              <div class="meting"></div>
+              <div class="meting"></div>
+              <div class="meting"></div>
+              <div class="meting"></div>
+              <div class="meting"></div>
+              <div class="meting"></div>
+            </div>
+          </section>
+          <section id="danger">
+            Omgeving van spaceship
+            <div class="melding" id="veilig"></div>
+            <div class="melding" id="storing"></div>
+            <div class="melding" id="gevaar"></div>
+
+              <button id="veiligButton" onclick="changeMeldingVeilig()">Veilig</button>
+              <button id="storingButton" onclick="changeMeldingStoring()">Storingen</button>
+              <button id="gevaarButton" onclick="changeMeldingGevaar()">GEVAAR</button>
+          </section>
+        </div>
+      </main>
+    </section>
+    </body>
+    <script type="text/javascript" src="js/main.js"></script>
+</html>
